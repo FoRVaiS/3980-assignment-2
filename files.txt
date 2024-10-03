@@ -1,2 +1,2 @@
-assign-2-client src/client/main.c
-assign-2-server src/server/main.c
+assign-2-client src/client/main.c src/msg.c include/msg.h src/network.c include/network.h src/client/cli.c include/client/cli.h
+assign-2-server src/server/main.c src/msg.c include/msg.h src/network.c include/network.h src/filters.c include/filters.h
