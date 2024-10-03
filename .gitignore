@@ -480,3 +480,8 @@ CMakeLists.txt
 build/
 
 .cache
+
+!src/client
+!src/server
+!include/client
+!include/server

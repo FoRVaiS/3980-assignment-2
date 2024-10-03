@@ -1,2 +1,2 @@
-assign-2-client src/client/main.c
-assign-2-server src/server/main.c
+assign-2-client src/client/main.c src/msg.c include/msg.h src/io.c include/io.h src/client/cli.c include/client/cli.h
+assign-2-server src/server/main.c src/msg.c include/msg.h src/io.c include/io.h src/server/cli.c include/server/cli.h src/filters.c include/filters.h src/server/thread.c include/server/thread.h pthread
