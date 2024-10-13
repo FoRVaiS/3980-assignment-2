@@ -17,7 +17,7 @@ enum
 };
 
 // NOLINTNEXTLINE(cppcoreguidelines-avoid-non-const-global-variables,-warnings-as-errors])
-short shutdown = 0;
+static short shutdown = 0;
 
 static void *handle_request(void *args);
 static void  signal_handler(int signal_number);
