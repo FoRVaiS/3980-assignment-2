@@ -43,7 +43,14 @@ int main(int argc, char *argv[])
     }
 
     // SIGINT Shutdown handling
+#if defined(__clang__)
+    #pragma clang diagnostic push
+    #pragma clang diagnostic ignored "-Wdisabled-macro-expansion"
+#endif
     sa.sa_handler = signal_handler;
+#if defined(__clang__)
+    #pragma clang diagnostic pop
+#endif
     sigemptyset(&sa.sa_mask);
     sa.sa_flags = 0;
 
